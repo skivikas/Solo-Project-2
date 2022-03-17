@@ -6,7 +6,26 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "dist"),
   },
-  mode: 'production',
+//   mode: 'production',
+  mode: process.env.NODE_ENV, 
+  performance: {
+      hints: false
+  },
+  devServer: {
+      host: 'localhost',
+      port: 8080,
+      static: {
+            directory: path.resolve(__dirname, '/dist'),
+            publicPath: '/'
+        },
+    compress: true,
+},
+proxy: {
+    '/step2/**': {
+      target: 'http://localhost:3000/',
+      secure: false,
+    },
+},
   module: {
     rules: [
       {
@@ -19,6 +38,18 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      }
     ]
   },
   plugins: [
@@ -26,4 +57,7 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 }

@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #8fbc8f;
+    /* background-image: url('./images/stock.png'); */
+    /* background-repeat: horizontally;
+    background-size: contain; */
+}
+
+/* .home {
+    background-image: url('./images/stock.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+} */
+
+
+h1 {
+    text-align: center;
+    font-size: 50;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+h3, p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 15px;
+    justify-content: center;
+    width: 350px;
+    height: 60px;
+    background-color: rgb(28, 109, 78);
+    border-radius: 8px;
+    border: rgb(28, 109, 78);
+    /* border-color: rgb(28, 109, 78); */
+    color: rgba(255, 255, 255, 0.658);
+}
+
+#zip {
+    text-align: center;
+}
+
+#zip_submit button {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(28, 109, 78);
+    border-radius: 8px;
+    border: rgb(28, 109, 78);
+    color: rgba(255, 255, 255, 0.658);
+}
+
+article {
+    display: flex;
+    color: black; 
+    background: white;
+    padding: 2rem; 
+    border: 1px; 
+    box-shadow: 1px 1px 5px;
+}

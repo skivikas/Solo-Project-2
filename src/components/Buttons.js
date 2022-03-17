@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { useNavigate } from 'react-router-dom'
 
-class Buttons extends Component {
-    render() {
+
+const Buttons = (props) => { 
+    const navigate = useNavigate();
+ 
         return (
             <div className="steps">
                  <ul>
@@ -9,10 +12,10 @@ class Buttons extends Component {
                     <li><button type = "button">Step 2: Pick Your Crops</button></li>
                     <li><button type = "button">Step 3: Plan Your Plot</button></li>
                 </ul>
-                <button id ="start" type = "button">Get Started!</button>
+                <button type="button" onClick={() => navigate("/step1")}>Get Started!</button>
+             
             </div>
         )
-    }
 }
 
 export default Buttons;
