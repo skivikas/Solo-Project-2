@@ -30,7 +30,7 @@ h3, p {
     color: rgba(255, 255, 255, 0.658);
 }
 
-ul {
+#buttons {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -66,10 +66,35 @@ button {
 }
 
 article {
-    display: flex;
+    /* display: grid; */
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-evenly; */
     color: black; 
     background: white;
     padding: 2rem; 
     border: 1px; 
     box-shadow: 1px 1px 5px;
+    width: 170px;
+}
+
+.crop_card {
+    /* display: grid; */
+    padding: 1rem 3rem;
+}
+
+#card_details {
+    align-items: start;
+}
+
+#crops {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2em;
+}
+
+#buttons2 {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }

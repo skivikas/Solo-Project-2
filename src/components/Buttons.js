@@ -7,7 +7,7 @@ const Buttons = (props) => {
  
         return (
             <div className="steps">
-                 <ul>
+                 <ul id="buttons">
                     <li><button type = "button">Step 1: Enter Zip Code</button></li>
                     <li><button type = "button">Step 2: Pick Your Crops</button></li>
                     <li><button type = "button">Step 3: Plan Your Plot</button></li>

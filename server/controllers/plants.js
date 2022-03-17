@@ -6,7 +6,7 @@ plants.getCards = (req, res, next) => {
     const query = `SELECT * FROM plants;`;
     db.query(query)
     .then((data) => {
-        console.log(data)
+        // console.log('data is ', data.rows)
         res.locals = data.rows;
         return next();
     })

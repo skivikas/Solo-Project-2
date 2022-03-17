@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Crops from './crops.js';
 
 const Step3 = (props) => {
     const navigate = useNavigate();

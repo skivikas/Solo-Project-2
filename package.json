@@ -13,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.2",
     "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "express": "^4.17.3",
     "node-fetch": "^3.2.3",

@@ -3,10 +3,20 @@ const app = express();
 const path = require('path');
 const PORT = 3000;
 const getPlants = require('./routers/getPlants');
+const cors = require = require('cors');
+const bodyParser = require('body-parser');
+
+
+app.use(cors());
+// app.use(bodyParser.urlencoded({ extended: false}));
+// app.use(bodyParser.json());
+
 
 // statically serve everything in the build folder on the route '/build'
 // app.use('/build', express.static(path.join(__dirname, '../build')));
 app.use(express.static(path.resolve(__dirname, '../src')))
+
+// app.use(bodyParser.json());
 
 app.use('/step2', getPlants);
 
