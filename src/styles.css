@@ -5,35 +5,38 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.body {
     background-color: #8fbc8f;
-    /* background-image: url('./images/stock.png'); */
-    /* background-repeat: horizontally;
-    background-size: contain; */
+    /* background-image: url('./images/cabbage.png'); */
+    background-image: url('https://img.freepik.com/free-photo/frame-various-vegetables-dark-background_200040-3404.jpg');
+    /* background-repeat: horizontally; */
+    background-size: cover;
+    /* height: 100vh; */
 }
-
-/* .home {
-    background-image: url('./images/stock.png');
-    height: 100vh;
-    background-repeat: no-repeat;
-} */
 
 
 h1 {
     text-align: center;
-    font-size: 50;
-    color: rgba(255, 255, 255, 0.658);
+    /* align-content: center; */
+    font-size: 90px;
+    color: rgba(255, 255, 255, 0.918);
 }
 
 h3, p {
     text-align: center;
-    color: rgba(255, 255, 255, 0.658);
+    color: rgba(255, 255, 255, 0.863);
 }
 
 #buttons {
-    list-style-type: none;
+    /* list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; 
+    flex-direction: row;
+    align-content: center; */
+    flex-direction: column;
+
+
+
 }
 
 button {
@@ -49,39 +52,57 @@ button {
     border-radius: 8px;
     border: rgb(28, 109, 78);
     /* border-color: rgb(28, 109, 78); */
-    color: rgba(255, 255, 255, 0.658);
+    color: rgba(255, 255, 255, 0.863);
+
+}
+
+#start {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    width: 200px;
+    margin-top: 100px;
+
 }
 
 #zip {
     text-align: center;
+    color: rgba(10, 10, 10, 0.993);
 }
 
-#zip_submit button {
-    width: 50px;
+#zip_submit {
+    margin-top: 10px;
+    width: 100px;
     height: 30px;
+    padding-top: 0px;
     background-color: rgb(28, 109, 78);
     border-radius: 8px;
     border: rgb(28, 109, 78);
-    color: rgba(255, 255, 255, 0.658);
+    color: rgba(255, 255, 255, 0.829);
+    text-align: center;
 }
 
-article {
-    /* display: grid; */
-    flex-direction: column;
-    /* align-items: center;
-    justify-content: space-evenly; */
-    color: black; 
-    background: white;
-    padding: 2rem; 
-    border: 1px; 
-    box-shadow: 1px 1px 5px;
-    width: 170px;
+#label {
+    color: rgba(255, 255, 255, 0.904);
 }
 
 .crop_card {
     /* display: grid; */
-    padding: 1rem 3rem;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    color: black; 
+    background: rgba(255, 255, 255, 0.801);
+    /* padding: 2rem;  */
+    border: 1px; 
+    box-shadow: 1px 1px 5px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 1rem;
 }
+
 
 #card_details {
     align-items: start;
@@ -91,10 +112,24 @@ article {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 2em;
+    margin-bottom: 20px;
 }
 
 #buttons2 {
     display: flex;
-    justify-content: space-between;
+    margin-top: 10px;
+    column-gap: 30px;
+    justify-content: center;
+    align-content: center;
     width: 300px;
+}
+
+#steps {
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    border: 1px; 
+    background: rgba(255, 255, 255, 0.801);
+    list-style-type: none;
+
 }

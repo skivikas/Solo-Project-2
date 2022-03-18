@@ -37,7 +37,9 @@ proxy: {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
-      },
+      }
+    ],
+    "loaders": [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
@@ -47,10 +49,19 @@ proxy: {
         use: ['file-loader'],
       },
       {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: require.resolve('url-loader'),
+        options: {
+                   limit: 10000,
+                   name: 'static/media/[name].[hash:8].[ext]',
+                 },
+      },
+      {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       }
     ]
+    
   },
   plugins: [
     new HtmlWebpackPlugin({

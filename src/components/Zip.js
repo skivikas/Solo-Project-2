@@ -53,7 +53,7 @@ const Zip = (props) => {
         <div>
             {/* <form id="zip" onSubmit={getZip}> */}
             <form id="zip">
-                <label for="zip">Please enter your zip code: </label>
+                <label id="label">Please enter your zip code: </label>
                 <input type="text" id="zip"></input>
                 <input id="submit" type="submit"></input>
             </form>

@@ -14,7 +14,7 @@ class App extends Component {
         return(
       
             <div className="home">
-                <h1>HOME GROW</h1>
+                <h1>THE HOME FARMER</h1>
                 <Router>
                     <Routes>
                         <Route path="/" element={<Buttons/>}/>

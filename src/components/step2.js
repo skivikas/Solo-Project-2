@@ -25,13 +25,13 @@ const Step2 = (props) => {
         <div id="step2">
             <h3>Step 2: Pick Your Crops</h3>
             <p>These crops are the best suited for your area</p>
-            <p>Select the crops you would like to add to your garden plan or select add crop below!</p>
+            <p>Select the crops you would like to add to your garden plan or select add crop below</p>
             <div id="crops">
                 {crops}
             </div>
             <div id="buttons2">
-                <button type="button">Add Crop</button>
-                <button type="button" onClick={() => navigate("/step3")}>Next</button>
+                <button>Add Crop</button>
+                <button onClick={() => navigate("/step3")}>Next</button>
             </div>
         </div>
     )
